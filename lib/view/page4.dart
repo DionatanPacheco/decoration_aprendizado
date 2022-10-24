@@ -1,7 +1,5 @@
 import 'package:flutter/material.dart';
 
-import '../components/usual_box.dart';
-
 class Page4 extends StatelessWidget {
   const Page4({super.key});
 
@@ -9,7 +7,22 @@ class Page4 extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       body: Container(
-        child: const UsualBox(child: Text('Pagina 4')),
+        padding: const EdgeInsets.only(top: 60, left: 30),
+        alignment: Alignment.topLeft,
+        child: Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
+          children: const [
+            Text(
+              'Configurações',
+              style: TextStyle(
+                  fontSize: 25,
+                  color: Colors.black54,
+                  fontStyle: FontStyle.italic,
+                  decoration: TextDecoration.none),
+            ),
+            Padding(padding: EdgeInsets.only(top: 20)),
+          ],
+        ),
       ),
     );
   }
