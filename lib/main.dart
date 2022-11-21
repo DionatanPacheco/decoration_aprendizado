@@ -15,6 +15,8 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       debugShowMaterialGrid: false,
       home: Page1(),
+      //initialRoute: '/chat',
+      //onGenerateRoute:
     );
   }
 }
